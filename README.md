@@ -2,6 +2,4 @@
 
 ![cv](/public/assets/cv.png)
 
-## License
-
-[MIT](/LICENSE)
+#### ✨ Credits to [BartoszJarocki](https://github.com/BartoszJarocki)
