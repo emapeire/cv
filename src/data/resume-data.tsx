@@ -92,14 +92,14 @@ export const RESUME_DATA = {
 		{
 			title: 'SWC Router',
 			techStack: [
-				'Side Project',
+				'CSS',
+				'HTML',
+				'JavaScript',
 				'Open Source',
 				'React',
-				'JavaScript',
-				'HTML',
-				'Vite',
-				'CSS',
-				'SWC'
+				'SWC',
+				'Side Project',
+				'Vite'
 			],
 			description:
 				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
@@ -112,16 +112,16 @@ export const RESUME_DATA = {
 		{
 			title: 'Eloquent JavaScript Chat',
 			techStack: [
-				'Side Project',
-				'Open Source',
-				'React',
-				'TypeScript',
-				'Next.js',
-				'Tailwind CSS',
-				'Shadcn/ui',
+				'GPT',
 				'Llama2',
+				'Next.js',
+				'Open Source',
 				'OpenAI',
-				'GPT'
+				'React',
+				'Shadcn/ui',
+				'Side Project',
+				'Tailwind CSS',
+				'TypeScript'
 			],
 			description:
 				'In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.',
@@ -134,15 +134,15 @@ export const RESUME_DATA = {
 		{
 			title: 'Image 2 Code',
 			techStack: [
-				'Side Project',
-				'Open Source',
-				'React',
-				'TypeScript',
+				'GPT',
 				'Next.js',
-				'Tailwind CSS',
-				'Shadcn/ui',
+				'Open Source',
 				'OpenAI',
-				'GPT'
+				'React',
+				'Shadcn/ui',
+				'Side Project',
+				'Tailwind CSS',
+				'TypeScript'
 			],
 			description:
 				'This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.',
