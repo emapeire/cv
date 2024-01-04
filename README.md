@@ -2,4 +2,4 @@
 
 ![cv](/public/assets/cv.png)
 
-#### ✨ Credits to [BartoszJarocki](https://github.com/BartoszJarocki)
+#### ✨ Credits to [Bartosz Jarocki](https://github.com/BartoszJarocki)
