@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/react'
+// import { Analytics } from '@vercel/analytics/react'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			</Head>
 			<body>
 				{children}
-				<Analytics />
+				{/* <Analytics /> */}
 			</body>
 		</html>
 	)
