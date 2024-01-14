@@ -11,7 +11,7 @@ export const RESUME_DATA = {
 	My passion lies in crafting innovative solutions that blend technology and design with a focus on social impact, aiming to make a meaningful difference in people's lives.
 	I am dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
 	My goal is to provide a smooth and effective user experience.`,
-	avatar: '/img/avatar.png',
+	avatar: '/imgs/avatar.png',
 	personalWebsiteUrl: 'https://linktr.ee/emapeire',
 	contact: {
 		email: 'emapeire@outlook.com',
