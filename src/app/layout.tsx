@@ -1,8 +1,8 @@
 import React from 'react'
+import { HeadIcons } from '@/components/head-icons'
 import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { HeadIcons } from '@/components/head-icons'
 // import { Analytics } from '@vercel/analytics/react'
 
 const metadata: Metadata = {
