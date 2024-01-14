@@ -13,7 +13,7 @@ import {
 	DrawerClose
 } from './ui/drawer'
 
-export const PrintDrawer = () => {
+export function PrintDrawer() {
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>

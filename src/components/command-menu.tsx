@@ -18,7 +18,7 @@ interface Props {
 	links: { url: string; title: string }[]
 }
 
-export const CommandMenu = ({ links }: Props) => {
+export function CommandMenu({ links }: Props) {
 	const [open, setOpen] = React.useState(false)
 
 	React.useEffect(() => {
