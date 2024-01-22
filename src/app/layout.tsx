@@ -1,9 +1,15 @@
 import React from 'react'
-import { HeadIcons } from '@/components/head-icons'
-import { metadata } from '@/components/metadata'
+import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import { RESUME_DATA } from '@/data/resume-data'
+import { Head } from '@/components/head'
 // import { Analytics } from '@vercel/analytics/react'
+import './globals.css'
+
+const metadata: Metadata = {
+	title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+	description: RESUME_DATA.summary
+}
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -13,7 +19,7 @@ const inter = Inter({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang='en' className={`${inter.className}`}>
-			<HeadIcons metadata={metadata} />
+			<Head metadata={metadata} />
 			<body>
 				{children}
 				{/* <Analytics /> */}

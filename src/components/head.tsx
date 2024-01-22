@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import { type Metadata } from 'next'
+import { Metadata } from 'next'
 
-export function HeadIcons({ metadata }: { metadata: Metadata }) {
+export function Head({ metadata }: { metadata: Metadata }) {
 	return (
-		<Head>
+		<head>
 			<meta charSet='utf-8' />
 			<meta name='viewport' content='width=device-width, initial-scale=1' />
-			<meta title={metadata.title?.toString()} />
-			<meta name='description' content={metadata.description?.toString()} />
+			<title>{metadata}</title>
+			<meta name='description' content={metadata} />
 			<meta name='author' content='Emanuel Peire' />
 			<meta name='robots' content='index, follow' />
 			<meta name='application-name' content='ep-app' />
@@ -23,6 +22,6 @@ export function HeadIcons({ metadata }: { metadata: Metadata }) {
 			<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
 			<link rel='manifest' href='/site.webmanifest' />
 			<link rel='mask-icon' href='/safari-pinned-tab.svg' color='#000000' />
-		</Head>
+		</head>
 	)
 }
