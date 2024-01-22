@@ -14,20 +14,27 @@ module.exports = {
 		'plugin:react/recommended',
 		'plugin:react/jsx-runtime'
 	],
-	ignorePatterns: ['dist', '.eslintrc.cjs'],
+	ignorePatterns: [
+		'dist',
+		'.eslintrc.cjs',
+		'tsconfig.json',
+		'next.config.js',
+		'tailwind.config.js'
+	],
 	parser: '@typescript-eslint/parser',
+	parserOptions: {
+		project: './tsconfig.json'
+	},
 	plugins: ['react-refresh'],
 	rules: {
-		'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+		'react/no-unknown-property': 'off',
+		'react-refresh/only-export-components': ['off', { allowConstantExport: true }],
 		'react/jsx-no-target-blank': [2, { allowReferrer: false }],
 		'react/prop-types': 'off'
 	},
 	overrides: [
 		{
-			files: ['*.ts', '*.tsx'],
-			parserOptions: {
-				project: './tsconfig.json'
-			}
+			files: ['*.ts', '*.tsx']
 		}
 	]
 }
