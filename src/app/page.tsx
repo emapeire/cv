@@ -6,14 +6,9 @@ import { Section } from '@/components/ui/section'
 import { Button } from '@/components/ui/button'
 import { ProjectCard } from '@/components/project-card'
 import { HeadIcons } from '@/components/head-icons'
-import { type Metadata } from 'next'
+import { metadata } from '@/components/metadata'
 import { GlobeIcon, MailIcon, PhoneIcon } from 'lucide-react'
 import { RESUME_DATA } from '@/data/resume-data'
-
-const metadata: Metadata = {
-	title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-	description: RESUME_DATA.summary
-}
 
 export default function Page() {
 	return (

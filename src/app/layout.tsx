@@ -1,15 +1,9 @@
 import React from 'react'
 import { HeadIcons } from '@/components/head-icons'
-import { type Metadata } from 'next'
+import { metadata } from '@/components/metadata'
 import { Inter } from 'next/font/google'
 import './globals.css'
 // import { Analytics } from '@vercel/analytics/react'
-
-const metadata: Metadata = {
-	title: 'CV - Emanuel Peire',
-	description:
-		'Frontend Engineer, OSS Developer, LLMs technical researcher and DX Architect. Always influenced by design.'
-}
 
 const inter = Inter({
 	subsets: ['latin'],
