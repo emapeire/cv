@@ -5,8 +5,8 @@ export function Head({ metadata }: { metadata: Metadata }) {
 		<head>
 			<meta charSet='utf-8' />
 			<meta name='viewport' content='width=device-width, initial-scale=1' />
-			<title>{metadata}</title>
-			<meta name='description' content={metadata} />
+			<title>{metadata.title?.toString()}</title>
+			<meta name='description' content={metadata.description?.toString()} />
 			<meta name='author' content='Emanuel Peire' />
 			<meta name='robots' content='index, follow' />
 			<meta name='application-name' content='ep-app' />
