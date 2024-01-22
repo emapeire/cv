@@ -30,5 +30,8 @@
     "src/images/logos/*.*",
     ".eslintrc.cjs"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
