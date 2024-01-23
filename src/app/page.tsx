@@ -32,21 +32,21 @@ export default function Page() {
 						<div className='flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden'>
 							{RESUME_DATA.contact.email ? (
 								<Button className='h-8 w-8' variant='outline' size='icon' asChild>
-									<a href={`mailto:${RESUME_DATA.contact.email}`}>
+									<a href={`mailto:${RESUME_DATA.contact.email}`} target='_blank' rel='noreferrer'>
 										<MailIcon className='h-4 w-4' />
 									</a>
 								</Button>
 							) : null}
 							{RESUME_DATA.contact.tel ? (
 								<Button className='h-8 w-8' variant='outline' size='icon' asChild>
-									<a href={`tel:${RESUME_DATA.contact.tel}`}>
+									<a href={`tel:${RESUME_DATA.contact.tel}`} target='_blank' rel='noreferrer'>
 										<PhoneIcon className='h-4 w-4' />
 									</a>
 								</Button>
 							) : null}
 							{RESUME_DATA.contact.social.map((social) => (
 								<Button key={social.name} className='h-8 w-8' variant='outline' size='icon' asChild>
-									<a href={social.url}>
+									<a href={social.url} target='_blank' rel='noreferrer'>
 										<social.icon className='h-4 w-4' />
 									</a>
 								</Button>
@@ -54,12 +54,12 @@ export default function Page() {
 						</div>
 						<div className='hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex'>
 							{RESUME_DATA.contact.email ? (
-								<a href={`mailto:${RESUME_DATA.contact.email}`}>
+								<a href={`mailto:${RESUME_DATA.contact.email}`} target='_blank' rel='noreferrer'>
 									<span className='underline'>{RESUME_DATA.contact.email}</span>
 								</a>
 							) : null}
 							{RESUME_DATA.contact.tel ? (
-								<a href={`tel:${RESUME_DATA.contact.tel}`}>
+								<a href={`tel:${RESUME_DATA.contact.tel}`} target='_blank' rel='noreferrer'>
 									<span className='underline'>{RESUME_DATA.contact.tel}</span>
 								</a>
 							) : null}
@@ -85,7 +85,12 @@ export default function Page() {
 								<CardHeader>
 									<div className='flex items-center justify-between gap-x-2 text-base'>
 										<h3 className='inline-flex items-center justify-center gap-x-1 font-semibold leading-none'>
-											<a className='hover:underline' href={work.link}>
+											<a
+												className='hover:underline'
+												href={work.link}
+												target='_blank'
+												rel='noreferrer'
+											>
 												{work.company}
 											</a>
 
