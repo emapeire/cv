@@ -12,9 +12,9 @@ export const RESUME_DATA = {
 	I am dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
 	My goal is to provide a smooth and effective user experience.`,
 	avatar: '/images/avatar.png',
-	personalWebsiteUrl: 'https://linktr.ee/emapeire',
+	personalWebsiteUrl: 'https://emapeire.xyz',
 	contact: {
-		email: 'emapeire@outlook.com',
+		email: 'me@emapeire.xyz',
 		tel: '+5493417190449',
 		social: [
 			{
