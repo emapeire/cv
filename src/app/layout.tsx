@@ -7,8 +7,8 @@ import { Head } from '@/components/head'
 import './globals.css'
 
 const metadata: Metadata = {
-	title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-	description: RESUME_DATA.summary
+	title: `CV | ${RESUME_DATA.name}`,
+	description: `${RESUME_DATA.about}`
 }
 
 const inter = Inter({
