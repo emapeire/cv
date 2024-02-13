@@ -1,9 +1,9 @@
 import React from 'react'
 import { type Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 import { RESUME_DATA } from '@/data/resume-data'
 import { Head } from '@/components/head'
-// import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
 const metadata: Metadata = {
@@ -11,19 +11,11 @@ const metadata: Metadata = {
 	description: `${RESUME_DATA.about}`
 }
 
-const inter = Inter({
-	subsets: ['latin'],
-	display: 'swap'
-})
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang='en' className={`${inter.className}`}>
+		<html lang='en' className={`${GeistSans.variable} ${GeistMono.variable}`}>
 			<Head metadata={metadata} />
-			<body>
-				{children}
-				{/* <Analytics /> */}
-			</body>
+			<body>{children}</body>
 		</html>
 	)
 }
