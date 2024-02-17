@@ -5,7 +5,7 @@ import { CommandMenu } from '@/components/command-menu'
 import { Section } from '@/components/ui/section'
 import { Button } from '@/components/ui/button'
 import { ProjectCard } from '@/components/project-card'
-import { GlobeIcon, MailIcon, PhoneIcon } from 'lucide-react'
+import { GlobeIcon, MailIcon, PhoneIcon, AppWindowIcon } from 'lucide-react'
 import { data } from '@/constants'
 
 export default function Page() {
@@ -30,6 +30,13 @@ export default function Page() {
 							</a>
 						</p>
 						<div className='flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden'>
+							{data.personalWebsiteUrl ? (
+								<Button className='h-8 w-8' variant='outline' size='icon' asChild>
+									<a href={data.personalWebsiteUrl} target='_blank' rel='noreferrer'>
+										<AppWindowIcon className='h-4 w-4' />
+									</a>
+								</Button>
+							) : null}
 							{data.contact.email ? (
 								<Button className='h-8 w-8' variant='outline' size='icon' asChild>
 									<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
