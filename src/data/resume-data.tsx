@@ -201,6 +201,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'React GPT',
+			techStack: ['GPT', 'Open Source', 'OpenAI', 'React', 'Side Project'],
+			description: 'An AI-driven web engineering expert for React community.',
+			link: {
+				label: 'chat.openai.com/g/g-HNcbE0A5n-reactgpt',
+				href: 'https://chat.openai.com/g/g-HNcbE0A5n-reactgpt'
+			}
+		},
+		{
 			title: 'Screen Recorder',
 			techStack: ['API', 'CSS', 'HTML', 'JavaScript', 'Open Source', 'Side Project'],
 			description: 'Native screen recorder made with MediaRecorder web-api',
