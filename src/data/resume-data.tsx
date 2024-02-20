@@ -127,6 +127,15 @@ export const RESUME_DATA = {
 	],
 	projects: [
 		{
+			title: 'Calculator App',
+			techStack: ['JavaScript', 'React', 'Side Project'],
+			description: 'A simple calculator app made with React and JavaScript.',
+			link: {
+				label: 'github.com/emapeire/calculator',
+				href: 'https://github.com/emapeire/calculator'
+			}
+		},
+		{
 			title: 'Cohere Chat',
 			techStack: ['AI', 'API', 'Chat-bot', 'JavaScript', 'Node.js', 'Open Source', 'Side Project'],
 			description: 'A chatbot that uses the Cohere API to generate responses to user input.',
