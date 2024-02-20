@@ -168,22 +168,6 @@ export const RESUME_DATA = {
 			}
 		},
 		{
-			title: 'SWC Router',
-			techStack: [
-				'CSS',
-				'HTML',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'SWC',
-				'Side Project',
-				'Vite'
-			],
-			description:
-				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
-			link: { label: 'npmjs.com/package/swc-router', href: 'https://npmjs.com/package/swc-router' }
-		},
-		{
 			title: 'Screen Recorder',
 			techStack: [
 				'API',
@@ -221,6 +205,22 @@ export const RESUME_DATA = {
 				label: 'github.com/emapeire/spotify-clone',
 				href: 'https://github.com/emapeire/spotify-clone'
 			}
+		},
+		{
+			title: 'SWC Router',
+			techStack: [
+				'CSS',
+				'HTML',
+				'JavaScript',
+				'Open Source',
+				'React',
+				'SWC',
+				'Side Project',
+				'Vite'
+			],
+			description:
+				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
+			link: { label: 'npmjs.com/package/swc-router', href: 'https://npmjs.com/package/swc-router' }
 		},
 		{
 			title: 'View-Transitions-API',
