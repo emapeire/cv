@@ -127,6 +127,15 @@ export const RESUME_DATA = {
 	],
 	projects: [
 		{
+			title: 'Cohere Chat',
+			techStack: ['AI', 'API', 'Chat-bot', 'JavaScript', 'Node.js', 'Open Source', 'Side Project'],
+			description: 'A chatbot that uses the Cohere API to generate responses to user input.',
+			link: {
+				label: 'github.com/emapeire/cohere-chat',
+				href: 'https://github.com/emapeire/cohere-chat'
+			}
+		},
+		{
 			title: 'Eloquent JavaScript Chat',
 			techStack: [
 				'GPT',
@@ -230,6 +239,24 @@ export const RESUME_DATA = {
 			link: {
 				label: 'github.com/emapeire/view-transitions-api',
 				href: 'https://github.com/emapeire/view-transitions-api'
+			}
+		},
+		{
+			title: 'TODO App TS',
+			techStack: [
+				'CSS',
+				'HTML',
+				'JavaScript',
+				'Open Source',
+				'React',
+				'Side Project',
+				'TypeScript',
+				'Vite'
+			],
+			description: 'A simple todo app made with React and TypeScript.',
+			link: {
+				label: 'github.com/emapeire/todo-app-ts',
+				href: 'https://github.com/emapeire/todo-app-ts'
 			}
 		}
 	]
