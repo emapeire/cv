@@ -256,7 +256,7 @@ export const RESUME_DATA = {
 			link: { label: 'npmjs.com/package/swc-router', href: 'https://npmjs.com/package/swc-router' }
 		},
 		{
-			title: 'View-Transitions-API',
+			title: 'View Transitions API',
 			techStack: ['API', 'Astro', 'JavaScript', 'Open Source', 'Side Project'],
 			description:
 				'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
