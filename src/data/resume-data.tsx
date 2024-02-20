@@ -189,15 +189,15 @@ export const RESUME_DATA = {
 		{
 			title: 'Spotify Clone',
 			techStack: [
+				'Astro',
+				'Bun',
+				'JavaScript',
 				'Open Source',
 				'React',
 				'Side Project',
-				'Tailwind CSS',
-				'TypeScript',
-				'JavaScript',
 				'Svelte',
-				'Bun',
-				'Astro'
+				'Tailwind CSS',
+				'TypeScript'
 			],
 			description: 'An open-source Spotify clone built with Svelte and Astro.',
 			link: {
@@ -207,7 +207,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'View-Transitions-API',
-			techStack: ['Open Source', 'Side Project', 'JavaScript', 'Astro', 'API'],
+			techStack: ['API', 'Astro', 'JavaScript', 'Open Source', 'Side Project'],
 			description:
 				'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
 			link: {
@@ -218,15 +218,16 @@ export const RESUME_DATA = {
 		{
 			title: 'Screen Recorder',
 			techStack: [
+				'API',
+				'Astro',
+				'Bun',
+				'JavaScript',
 				'Open Source',
 				'React',
 				'Side Project',
-				'Tailwind CSS',
-				'TypeScript',
-				'JavaScript',
 				'Svelte',
-				'Bun',
-				'Astro'
+				'Tailwind CSS',
+				'TypeScript'
 			],
 			description: 'Native screen recorder made with MediaRecorder web-api',
 			link: {
