@@ -148,25 +148,6 @@ export const RESUME_DATA = {
 			}
 		},
 		{
-			title: 'SWC Router',
-			techStack: [
-				'CSS',
-				'HTML',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'SWC',
-				'Side Project',
-				'Vite'
-			],
-			description:
-				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
-			link: {
-				label: 'npmjs.com/package/swc-router',
-				href: 'https://npmjs.com/package/swc-router'
-			}
-		},
-		{
 			title: 'Image 2 Code',
 			techStack: [
 				'GPT',
@@ -184,6 +165,42 @@ export const RESUME_DATA = {
 			link: {
 				label: 'github.com/emapeire/image-to-code',
 				href: 'https://github.com/emapeire/image-to-code'
+			}
+		},
+		{
+			title: 'SWC Router',
+			techStack: [
+				'CSS',
+				'HTML',
+				'JavaScript',
+				'Open Source',
+				'React',
+				'SWC',
+				'Side Project',
+				'Vite'
+			],
+			description:
+				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
+			link: { label: 'npmjs.com/package/swc-router', href: 'https://npmjs.com/package/swc-router' }
+		},
+		{
+			title: 'Screen Recorder',
+			techStack: [
+				'API',
+				'Astro',
+				'Bun',
+				'JavaScript',
+				'Open Source',
+				'React',
+				'Side Project',
+				'Svelte',
+				'Tailwind CSS',
+				'TypeScript'
+			],
+			description: 'Native screen recorder made with MediaRecorder web-api',
+			link: {
+				label: 'github.com/emapeire/screen-recorder',
+				href: 'https://github.com/emapeire/screen-recorder'
 			}
 		},
 		{
@@ -213,26 +230,6 @@ export const RESUME_DATA = {
 			link: {
 				label: 'github.com/emapeire/view-transitions-api',
 				href: 'https://github.com/emapeire/view-transitions-api'
-			}
-		},
-		{
-			title: 'Screen Recorder',
-			techStack: [
-				'API',
-				'Astro',
-				'Bun',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'Side Project',
-				'Svelte',
-				'Tailwind CSS',
-				'TypeScript'
-			],
-			description: 'Native screen recorder made with MediaRecorder web-api',
-			link: {
-				label: 'github.com/emapeire/screen-recorder',
-				href: 'https://github.com/emapeire/screen-recorder'
 			}
 		}
 	]
