@@ -62,7 +62,7 @@ export const RESUME_DATA = {
 			description: `Building a non-profit open community of Next.js Argentina.`
 		},
 		{
-			company: 'Smat SA.',
+			company: 'Smat.io',
 			link: 'https://smat.io',
 			badges: ['Remote'],
 			title: 'QA Tester and Frontend Developer',
