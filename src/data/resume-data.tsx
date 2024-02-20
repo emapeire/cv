@@ -73,7 +73,7 @@ export const RESUME_DATA = {
 			Contributed to the frontend development of user-centric interfaces using React.js, enhancing user experiences through intuitive designs and responsive layouts.`
 		},
 		{
-			company: 'MakerDAO',
+			company: 'Maker DAO',
 			link: 'https://makerdao.com',
 			badges: ['Remote'],
 			title: 'Technical Writer and Translator',
