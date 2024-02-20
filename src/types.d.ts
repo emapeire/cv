@@ -1,7 +1,7 @@
 export interface SocialLink {
 	name: string
 	url: string
-	icon: React.ComponentType
+	icon: React.ComponentType<{ className: string }>
 }
 
 export interface ContactInfo {
