@@ -97,7 +97,7 @@ export default function Page() {
 											{work.link ? (
 												<a
 													className='hover:underline'
-													href={work?.link}
+													href={work.link}
 													target='_blank'
 													rel='noreferrer'
 												>
