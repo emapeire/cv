@@ -157,6 +157,30 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Google Translate Clone',
+			techStack: [
+				'AI',
+				'API',
+				'Bootstrap',
+				'CSS',
+				'GPT',
+				'HTML',
+				'JavaScript',
+				'Open Source',
+				'React',
+				'Side Project',
+				'TypeScript',
+				'Vite',
+				'Vitest'
+			],
+			description:
+				'This is a simple API that uses the OpenAI GPT-4-vision-preview model to generate code from images.',
+			link: {
+				label: 'github.com/emapeire/google-translate-clone',
+				href: 'https://github.com/emapeire/google-translate-clone'
+			}
+		},
+		{
 			title: 'Image 2 Code',
 			techStack: [
 				'GPT',
