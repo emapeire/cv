@@ -25,7 +25,7 @@ export default function Page() {
 								target='_blank'
 								rel='noreferrer'
 							>
-								<GlobeIcon className='h-3 w-3' />
+								<GlobeIcon className='size-3' />
 								{data.location}
 							</a>
 						</p>
@@ -39,9 +39,9 @@ export default function Page() {
 							]
 								.filter(Boolean)
 								.map(({ url, icon: Icon }) => (
-									<Button className='h-8 w-8' variant='outline' size='icon' asChild key={url}>
+									<Button className='size-8' variant='outline' size='icon' asChild key={url}>
 										<a href={url} target='_blank' rel='noreferrer'>
-											<Icon className='h-4 w-4' />
+											<Icon className='size-4' />
 										</a>
 									</Button>
 								))}
@@ -64,7 +64,7 @@ export default function Page() {
 						</div>
 					</div>
 
-					<Avatar className='h-28 w-28'>
+					<Avatar className='size-28'>
 						<AvatarImage alt={data.name} src={data.avatar} />
 						<AvatarFallback>{data.initials}</AvatarFallback>
 					</Avatar>
@@ -83,14 +83,18 @@ export default function Page() {
 								<CardHeader>
 									<div className='flex items-center justify-between gap-x-2 text-base'>
 										<h3 className='inline-flex items-center justify-center gap-x-1 font-semibold leading-none'>
-											<a
-												className='hover:underline'
-												href={work.link}
-												target='_blank'
-												rel='noreferrer'
-											>
-												{work.company}
-											</a>
+											{work.link ? (
+												<a
+													className='hover:underline'
+													href={work?.link}
+													target='_blank'
+													rel='noreferrer'
+												>
+													{work.company}
+												</a>
+											) : (
+												<p>{work.company}</p>
+											)}
 
 											<span className='inline-flex gap-x-1'>
 												{work.badges.map((badge) => (
