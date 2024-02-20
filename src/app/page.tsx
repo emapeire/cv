@@ -31,36 +31,47 @@ export default function Page() {
 						</p>
 
 						<div className='flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden'>
-							{[
-								data.personalWebsiteUrl && { url: data.personalWebsiteUrl, icon: AppWindowIcon },
-								data.contact.email && { url: `mailto:${data.contact.email}`, icon: MailIcon },
-								data.contact.tel && { url: `tel:${data.contact.tel}`, icon: PhoneIcon },
-								...data.contact.social.map((social) => ({ url: social.url, icon: social.icon }))
-							]
-								.filter(Boolean)
-								.map(({ url, icon: Icon }) => (
-									<Button className='size-8' variant='outline' size='icon' asChild key={url}>
-										<a href={url} target='_blank' rel='noreferrer'>
-											<Icon className='size-4' />
-										</a>
-									</Button>
-								))}
+							{data.personalWebsiteUrl && (
+								<Button className='size-8' variant='outline' size='icon' asChild>
+									<a href={data.personalWebsiteUrl} target='_blank' rel='noreferrer'>
+										<AppWindowIcon className='size-4' />
+									</a>
+								</Button>
+							)}
+							{data.contact.email && (
+								<Button className='size-8' variant='outline' size='icon' asChild>
+									<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
+										<MailIcon className='size-4' />
+									</a>
+								</Button>
+							)}
+							{data.contact.tel && (
+								<Button className='size-8' variant='outline' size='icon' asChild>
+									<a href={`tel:${data.contact.tel}`} target='_blank' rel='noreferrer'>
+										<PhoneIcon className='size-4' />
+									</a>
+								</Button>
+							)}
+							{data.contact.social.map((social) => (
+								<Button key={social.name} className='size-8' variant='outline' size='icon' asChild>
+									<a href={social.url} target='_blank' rel='noreferrer'>
+										<social.icon className='size-4' />
+									</a>
+								</Button>
+							))}
 						</div>
 
 						<div className='hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex'>
-							{[
-								data.contact.email && {
-									url: `mailto:${data.contact.email}`,
-									text: data.contact.email
-								},
-								data.contact.tel && { url: `tel:${data.contact.tel}`, text: data.contact.tel }
-							]
-								.filter(Boolean)
-								.map(({ url, text }) => (
-									<a key={url} href={url} target='_blank' rel='noreferrer'>
-										<span className='underline'>{text}</span>
-									</a>
-								))}
+							{data.contact.email && (
+								<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.contact.email}</span>
+								</a>
+							)}
+							{data.contact.tel && (
+								<a href={`tel:${data.contact.tel}`} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.contact.tel}</span>
+								</a>
+							)}
 						</div>
 					</div>
 
