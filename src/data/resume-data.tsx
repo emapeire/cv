@@ -289,6 +289,24 @@ export const RESUME_DATA = {
 				label: 'github.com/emapeire/todo-app-ts',
 				href: 'https://github.com/emapeire/todo-app-ts'
 			}
+		},
+		{
+			title: 'Twitter Clone',
+			techStack: [
+				'JavaScript',
+				'Next.js',
+				'Open Source',
+				'React',
+				'Side Project',
+				'Supabase',
+				'Talwind CSS',
+				'TypeScript'
+			],
+			description: 'An open-source Twitter clone built with Next.js and Supabase.',
+			link: {
+				label: 'github.com/emapeire/twitter-clone',
+				href: 'https://github.com/emapeire/twitter-clone'
+			}
 		}
 	]
 }
