@@ -202,18 +202,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Screen Recorder',
-			techStack: [
-				'API',
-				'Astro',
-				'Bun',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'Side Project',
-				'Svelte',
-				'Tailwind CSS',
-				'TypeScript'
-			],
+			techStack: ['API', 'CSS', 'HTML', 'JavaScript', 'Open Source', 'Side Project'],
 			description: 'Native screen recorder made with MediaRecorder web-api',
 			link: {
 				label: 'github.com/emapeire/screen-recorder',
