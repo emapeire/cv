@@ -38,22 +38,59 @@ export const RESUME_DATA = {
 		{
 			school: 'Universidad Nacional de Rosario',
 			degree: "Bachelor's Degree in Industrial Design",
-			start: '2019',
-			end: '2021'
+			start: 'Feb, 2019',
+			end: 'Dec, 2021'
 		}
 	],
 	work: [
+		{
+			company: 'Frontend Lab',
+			link: 'https://github.com/thefrontendlab',
+			badges: ['Hybrid'],
+			title: 'Software Developer and Technical Researcher',
+			start: 'Jul, 2021',
+			end: 'Present',
+			description: `Developing and researching new technologies and tools for the frontend community.`
+		},
+		{
+			company: 'Next.js Argentina',
+			link: 'https://github.com/nextjsargentina',
+			badges: ['Hybrid'],
+			title: 'Developer Experience Architect',
+			start: 'Aug, 2023',
+			end: 'Present',
+			description: `Building a non-profit open community of Next.js Argentina.`
+		},
 		{
 			company: 'Smat SA.',
 			link: 'https://smat.io',
 			badges: ['Remote'],
 			title: 'QA Tester and Frontend Developer',
-			logo: 'https://assets-global.website-files.com/63055fe72615549c6cfae8e0/63c55f389bcbb423249e730f_Frame%20560.png',
-			start: '2022',
-			end: '2023',
+			start: 'Aug, 2022',
+			end: 'Aug, 2023',
 			description: `Spearheaded comprehensive QA testing processes, employing tools like Jest, and Playwright to ensure seamless functionality and performance of web applications.
 			Collaborated with cross-functional teams to implement Test-Driven Development (TDD) methodologies, optimizing code quality and reducing bugs.
 			Contributed to the frontend development of user-centric interfaces using React.js, enhancing user experiences through intuitive designs and responsive layouts.`
+		},
+		{
+			company: 'MakerDAO',
+			link: 'https://makerdao.com',
+			badges: ['Remote'],
+			title: 'Technical Writer and Translator',
+			start: 'Feb, 2022',
+			end: 'Aug, 2022',
+			description: `Authored and translated technical documentation, including whitepapers,
+			guides, and tutorials, to facilitate user understanding of blockchain and DeFi concepts.`
+		},
+		{
+			company: 'El Chaperón',
+			badges: ['On-site'],
+			title: 'Web Desinger and Community Manager',
+			start: 'Jan, 2016',
+			end: 'Jan, 2019',
+			description: `Responsive website development and design in WordPress.
+			Online tourist services of the city of Rosario.
+			Endorsed by the Rosario Hotel Association and Tourist Entity (ETUR).`
 		}
 	],
 	skills: [
@@ -90,26 +127,6 @@ export const RESUME_DATA = {
 	],
 	projects: [
 		{
-			title: 'SWC Router',
-			techStack: [
-				'CSS',
-				'HTML',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'SWC',
-				'Side Project',
-				'Vite'
-			],
-			description:
-				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
-			logo: '',
-			link: {
-				label: 'npmjs.com/package/swc-router',
-				href: 'https://npmjs.com/package/swc-router'
-			}
-		},
-		{
 			title: 'Eloquent JavaScript Chat',
 			techStack: [
 				'GPT',
@@ -124,11 +141,29 @@ export const RESUME_DATA = {
 				'TypeScript'
 			],
 			description:
-				'In this app you will be able to interact with a intelligent llama that will answer your questions about JavaScript.',
-			logo: '',
+				'In this app you will be able to interact with an intelligent llama that will answer your questions about JavaScript.',
 			link: {
 				label: 'github.com/emapeire/eloquent-js-chat',
 				href: 'https://github.com/emapeire/eloquent-js-chat'
+			}
+		},
+		{
+			title: 'SWC Router',
+			techStack: [
+				'CSS',
+				'HTML',
+				'JavaScript',
+				'Open Source',
+				'React',
+				'SWC',
+				'Side Project',
+				'Vite'
+			],
+			description:
+				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
+			link: {
+				label: 'npmjs.com/package/swc-router',
+				href: 'https://npmjs.com/package/swc-router'
 			}
 		},
 		{
@@ -146,10 +181,57 @@ export const RESUME_DATA = {
 			],
 			description:
 				'This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.',
-			logo: '',
 			link: {
 				label: 'github.com/emapeire/image-to-code',
 				href: 'https://github.com/emapeire/image-to-code'
+			}
+		},
+		{
+			title: 'Spotify Clone',
+			techStack: [
+				'Open Source',
+				'React',
+				'Side Project',
+				'Tailwind CSS',
+				'TypeScript',
+				'JavaScript',
+				'Svelte',
+				'Bun',
+				'Astro'
+			],
+			description: 'An open-source Spotify clone built with Svelte and Astro.',
+			link: {
+				label: 'github.com/emapeire/spotify-clone',
+				href: 'https://github.com/emapeire/spotify-clone'
+			}
+		},
+		{
+			title: 'View-Transitions-API',
+			techStack: ['Open Source', 'Side Project', 'JavaScript', 'Astro', 'API'],
+			description:
+				'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
+			link: {
+				label: 'github.com/emapeire/view-transitions-api',
+				href: 'https://github.com/emapeire/view-transitions-api'
+			}
+		},
+		{
+			title: 'Screen Recorder',
+			techStack: [
+				'Open Source',
+				'React',
+				'Side Project',
+				'Tailwind CSS',
+				'TypeScript',
+				'JavaScript',
+				'Svelte',
+				'Bun',
+				'Astro'
+			],
+			description: 'Native screen recorder made with MediaRecorder web-api',
+			link: {
+				label: 'github.com/emapeire/screen-recorder',
+				href: 'https://github.com/emapeire/screen-recorder'
 			}
 		}
 	]
