@@ -137,7 +137,18 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Chat With Vader',
-			techStack: ['API', 'GPT', 'JavaScript', 'Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+			techStack: [
+				'AI',
+				'API',
+				'Chat-bot',
+				'GPT',
+				'JavaScript',
+				'Next.js',
+				'OpenAI',
+				'React',
+				'Tailwind CSS',
+				'TypeScript'
+			],
 			description:
 				'A simple chat app that uses the OpenAI API and Vercel AI SDK to chat with Darth Vader.',
 			link: {
