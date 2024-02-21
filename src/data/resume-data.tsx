@@ -262,6 +262,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Shopping Cart',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
+			description: 'A simple shopping cart app made with React and Vite.',
+			link: {
+				label: 'github.com/emapeire/shopping-cart',
+				href: 'https://github.com/emapeire/shopping-cart'
+			}
+		},
+		{
 			title: 'Space X Launches',
 			techStack: ['Astro', 'JavaScript', 'TypeScript'],
 			description: 'A simple app that lists all SpaceX launches. Built with Astro and TypeScript.',
