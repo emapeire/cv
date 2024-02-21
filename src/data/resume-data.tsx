@@ -244,6 +244,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Movie Search App',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
+			description: 'A simple movie search app made with React and Vite.',
+			link: {
+				label: 'github.com/emapeire/movie-search-app',
+				href: 'https://github.com/emapeire/react-movie-search'
+			}
+		},
+		{
 			title: 'React GPT',
 			techStack: ['GPT', 'OpenAI', 'React'],
 			description: 'An AI-driven web engineering expert for React community.',
