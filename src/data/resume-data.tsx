@@ -128,7 +128,7 @@ export const RESUME_DATA = {
 	projects: [
 		{
 			title: 'Calculator App',
-			techStack: ['JavaScript', 'React', 'Side Project'],
+			techStack: ['JavaScript', 'React'],
 			description: 'A simple calculator app made with React and JavaScript.',
 			link: {
 				label: 'github.com/emapeire/calculator',
@@ -136,8 +136,18 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Chat With Vader',
+			techStack: ['API', 'GPT', 'JavaScript', 'Next.js', 'React', 'Tailwind CSS', 'TypeScript'],
+			description:
+				'A simple chat app that uses the OpenAI API and Vercel AI SDK to chat with Darth Vader.',
+			link: {
+				label: 'github.com/emapeire/chat-with-vader',
+				href: 'https://github.com/emapeire/chat-with-vader'
+			}
+		},
+		{
 			title: 'Cohere Chat',
-			techStack: ['AI', 'API', 'Chat-bot', 'JavaScript', 'Node.js', 'Open Source', 'Side Project'],
+			techStack: ['AI', 'API', 'Chat-bot', 'JavaScript', 'Node.js'],
 			description: 'A chatbot that uses the Cohere API to generate responses to user input.',
 			link: {
 				label: 'github.com/emapeire/cohere-chat',
@@ -150,11 +160,9 @@ export const RESUME_DATA = {
 				'GPT',
 				'Llama2',
 				'Next.js',
-				'Open Source',
 				'OpenAI',
 				'React',
 				'Shadcn/ui',
-				'Side Project',
 				'Tailwind CSS',
 				'TypeScript'
 			],
@@ -175,9 +183,7 @@ export const RESUME_DATA = {
 				'GPT',
 				'HTML',
 				'JavaScript',
-				'Open Source',
 				'React',
-				'Side Project',
 				'TypeScript',
 				'Vite',
 				'Vitest'
@@ -191,17 +197,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Image 2 Code',
-			techStack: [
-				'GPT',
-				'Next.js',
-				'Open Source',
-				'OpenAI',
-				'React',
-				'Shadcn/ui',
-				'Side Project',
-				'Tailwind CSS',
-				'TypeScript'
-			],
+			techStack: ['GPT', 'Next.js', 'OpenAI', 'React', 'Shadcn/ui', 'Tailwind CSS', 'TypeScript'],
 			description:
 				'This is a tool that converts images to code. It uses AI to generate code from images. It is based on the GPT-4-vision-preview model.',
 			link: {
@@ -211,7 +207,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'React GPT',
-			techStack: ['GPT', 'Open Source', 'OpenAI', 'React', 'Side Project'],
+			techStack: ['GPT', 'OpenAI', 'React'],
 			description: 'An AI-driven web engineering expert for React community.',
 			link: {
 				label: 'chat.openai.com/g/g-HNcbE0A5n-reactgpt',
@@ -220,7 +216,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Screen Recorder',
-			techStack: ['API', 'CSS', 'HTML', 'JavaScript', 'Open Source', 'Side Project'],
+			techStack: ['API', 'CSS', 'HTML', 'JavaScript'],
 			description: 'Native screen recorder made with MediaRecorder web-api',
 			link: {
 				label: 'github.com/emapeire/screen-recorder',
@@ -229,7 +225,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Space X Launches',
-			techStack: ['Astro', 'JavaScript', 'Open Source', 'Side Project', 'TypeScript'],
+			techStack: ['Astro', 'JavaScript', 'TypeScript'],
 			description: 'A simple app that lists all SpaceX launches. Built with Astro and TypeScript.',
 			link: {
 				label: 'github.com/emapeire/spacex-launches',
@@ -238,17 +234,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Spotify Clone',
-			techStack: [
-				'Astro',
-				'Bun',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'Side Project',
-				'Svelte',
-				'Tailwind CSS',
-				'TypeScript'
-			],
+			techStack: ['Astro', 'Bun', 'JavaScript', 'React', 'Svelte', 'Tailwind CSS', 'TypeScript'],
 			description: 'An open-source Spotify clone built with Svelte and Astro.',
 			link: {
 				label: 'github.com/emapeire/spotify-clone',
@@ -257,23 +243,14 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'SWC Router',
-			techStack: [
-				'CSS',
-				'HTML',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'SWC',
-				'Side Project',
-				'Vite'
-			],
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'SWC', 'Vite'],
 			description:
 				'Simple single-page applications (SPA) with ease using swc-router. This lightweight routing solution for React applications leverages the speed of SWC.',
 			link: { label: 'npmjs.com/package/swc-router', href: 'https://npmjs.com/package/swc-router' }
 		},
 		{
 			title: 'View Transitions API',
-			techStack: ['API', 'Astro', 'JavaScript', 'Open Source', 'Side Project'],
+			techStack: ['API', 'Astro', 'JavaScript'],
 			description:
 				'This is a sample project that demonstrates how to use the View Transitions API with Astro.',
 			link: {
@@ -283,16 +260,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'TODO App TS',
-			techStack: [
-				'CSS',
-				'HTML',
-				'JavaScript',
-				'Open Source',
-				'React',
-				'Side Project',
-				'TypeScript',
-				'Vite'
-			],
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'TypeScript', 'Vite'],
 			description: 'A simple todo app made with React and TypeScript.',
 			link: {
 				label: 'github.com/emapeire/todo-app-ts',
@@ -301,16 +269,7 @@ export const RESUME_DATA = {
 		},
 		{
 			title: 'Twitter Clone',
-			techStack: [
-				'JavaScript',
-				'Next.js',
-				'Open Source',
-				'React',
-				'Side Project',
-				'Supabase',
-				'Talwind CSS',
-				'TypeScript'
-			],
+			techStack: ['JavaScript', 'Next.js', 'React', 'Supabase', 'Talwind CSS', 'TypeScript'],
 			description: 'An open-source Twitter clone built with Next.js and Supabase.',
 			link: {
 				label: 'github.com/emapeire/twitter-clone',
