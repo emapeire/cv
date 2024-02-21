@@ -185,7 +185,7 @@ export const RESUME_DATA = {
 			}
 		},
 		{
-			title: 'Google Translate Clone',
+			title: 'Google Translate UI',
 			techStack: [
 				'AI',
 				'API',
@@ -228,7 +228,7 @@ export const RESUME_DATA = {
 		{
 			title: 'Screen Recorder',
 			techStack: ['API', 'CSS', 'HTML', 'JavaScript'],
-			description: 'Native screen recorder made with MediaRecorder web-api',
+			description: 'Native screen recorder made with MediaRecorder web-api.',
 			link: {
 				label: 'github.com/emapeire/screen-recorder',
 				href: 'https://github.com/emapeire/screen-recorder'
@@ -244,7 +244,7 @@ export const RESUME_DATA = {
 			}
 		},
 		{
-			title: 'Spotify Clone',
+			title: 'Spotify UI',
 			techStack: ['Astro', 'Bun', 'JavaScript', 'React', 'Svelte', 'Tailwind CSS', 'TypeScript'],
 			description: 'An open-source Spotify clone built with Svelte and Astro.',
 			link: {
@@ -270,7 +270,16 @@ export const RESUME_DATA = {
 			}
 		},
 		{
-			title: 'TODO App TS',
+			title: 'Tesla Landing UI',
+			techStack: ['Astro', 'JavaScript', 'Tailwind CSS'],
+			description: 'An open-source Tesla landing page built with Astro and Tailwind CSS.',
+			link: {
+				label: 'github.com/emapeire/tesla-landing',
+				href: 'https://github.com/emapeire/tesla-landing'
+			}
+		},
+		{
+			title: 'Todo App',
 			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'TypeScript', 'Vite'],
 			description: 'A simple todo app made with React and TypeScript.',
 			link: {
@@ -279,7 +288,7 @@ export const RESUME_DATA = {
 			}
 		},
 		{
-			title: 'Twitter Clone',
+			title: 'Twitter UI',
 			techStack: ['JavaScript', 'Next.js', 'React', 'Supabase', 'Talwind CSS', 'TypeScript'],
 			description: 'An open-source Twitter clone built with Next.js and Supabase.',
 			link: {
