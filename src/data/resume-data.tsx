@@ -157,6 +157,24 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Comments App',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'TypeScript', 'Vite'],
+			description: 'A simple comments app made with React and Vite.',
+			link: {
+				label: 'github.com/emapeire/comments-react-query',
+				href: 'https://github.com/emapeire/comments-react-query'
+			}
+		},
+		{
+			title: 'Crud App',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Redux', 'TypeScript', 'Vite'],
+			description: 'A simple CRUD app made with React and Vite.',
+			link: {
+				label: 'github.com/emapeire/crud-react-redux',
+				href: 'https://github.com/emapeire/crud-react-redux'
+			}
+		},
+		{
 			title: 'Eloquent JavaScript Chat',
 			techStack: [
 				'GPT',
@@ -205,6 +223,15 @@ export const RESUME_DATA = {
 			link: {
 				label: 'github.com/emapeire/image-to-code',
 				href: 'https://github.com/emapeire/image-to-code'
+			}
+		},
+		{
+			title: 'JavaScript Quiz',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'TypeScript', 'Vite', 'Zustand'],
+			description: 'A simple quiz app made with React and Zustand.',
+			link: {
+				label: 'github.com/emapeire/javascript-quiz',
+				href: 'https://github.com/emapeire/javascript-quiz'
 			}
 		},
 		{
