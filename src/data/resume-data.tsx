@@ -279,6 +279,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Twitter Follow Card UI',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
+			description: 'An open-source Twitter follow card built with React and Vite.',
+			link: {
+				label: 'github.com/emapeire/twitter-follow-card',
+				href: 'https://github.com/emapeire/twitter-follow-card'
+			}
+		},
+		{
 			title: 'Twitter UI',
 			techStack: ['JavaScript', 'Next.js', 'React', 'Supabase', 'Talwind CSS', 'TypeScript'],
 			description: 'An open-source Twitter clone built with Next.js and Supabase.',
