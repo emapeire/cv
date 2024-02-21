@@ -235,6 +235,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Mouse Follower',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
+			description: 'A simple mouse follower app made with React and Vite.',
+			link: {
+				label: 'github.com/emapeire/mouse-follower',
+				href: 'https://github.com/emapeire/mouse-follower'
+			}
+		},
+		{
 			title: 'React GPT',
 			techStack: ['GPT', 'OpenAI', 'React'],
 			description: 'An AI-driven web engineering expert for React community.',
