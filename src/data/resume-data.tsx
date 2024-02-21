@@ -127,15 +127,6 @@ export const RESUME_DATA = {
 	],
 	projects: [
 		{
-			title: 'Calculator App',
-			techStack: ['JavaScript', 'React'],
-			description: 'A simple calculator app made with React and JavaScript.',
-			link: {
-				label: 'github.com/emapeire/calculator',
-				href: 'https://github.com/emapeire/calculator'
-			}
-		},
-		{
 			title: 'Chat With Vader',
 			techStack: [
 				'AI',
