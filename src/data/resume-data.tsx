@@ -228,6 +228,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Space X Launches',
+			techStack: ['Astro', 'JavaScript', 'Open Source', 'Side Project', 'TypeScript'],
+			description: 'A simple app that lists all SpaceX launches. Built with Astro and TypeScript.',
+			link: {
+				label: 'github.com/emapeire/spacex-launches',
+				href: 'https://github.com/emapeire/spacex-launches'
+			}
+		},
+		{
 			title: 'Spotify Clone',
 			techStack: [
 				'Astro',
