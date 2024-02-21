@@ -324,6 +324,15 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Tic Tac Toe',
+			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
+			description: 'A simple tic-tac-toe game made with React and TypeScript.',
+			link: {
+				label: 'github.com/emapeire/tic-tac-toe',
+				href: 'https://github.com/emapeire/tic-tac-toe'
+			}
+		},
+		{
 			title: 'Todo App',
 			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'TypeScript', 'Vite'],
 			description: 'A simple todo app made with React and TypeScript.',
