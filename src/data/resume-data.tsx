@@ -253,6 +253,26 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Next.js Releases App',
+			techStack: [
+				'API',
+				'CSS',
+				'HTML',
+				'JavaScript',
+				'Next.js',
+				'PNPM',
+				'React',
+				'Shadcn/ui',
+				'Talwind CSS',
+				'TypeScript'
+			],
+			description: "NextJS Releases is an App that tracks new releases on NextJS's GitHub.",
+			link: {
+				label: 'github.com/nextjsargentina/nextjs-releases',
+				href: 'https://github.com/nextjsargentina/nextjs-releases'
+			}
+		},
+		{
 			title: 'React GPT',
 			techStack: ['GPT', 'OpenAI', 'React'],
 			description: 'An AI-driven web engineering expert for React community.',
