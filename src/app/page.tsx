@@ -115,7 +115,7 @@ export default function Page() {
 												))}
 											</span>
 										</h3>
-										<div className='text-sm tabular-nums text-gray-500'>
+										<div className='text-sm tabular-nums text-neutral-500'>
 											{work.start} - {work.end}
 										</div>
 									</div>
@@ -136,7 +136,7 @@ export default function Page() {
 								<CardHeader>
 									<div className='flex items-center justify-between gap-x-2 text-base'>
 										<h3 className='font-semibold leading-none'>{education.school}</h3>
-										<div className='text-sm tabular-nums text-gray-500'>
+										<div className='text-sm tabular-nums text-neutral-500'>
 											{education.start} - {education.end}
 										</div>
 									</div>
