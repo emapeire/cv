@@ -74,11 +74,6 @@ export default function Page() {
 									<span className='underline'>{data.personalWebsiteUrl}</span>
 								</a>
 							)}
-							{data.contact.link && (
-								<a href={data.contact.link} target='_blank' rel='noreferrer'>
-									<span className='underline'>{data.contact.link}</span>
-								</a>
-							)}
 							{data.contact.email && (
 								<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
 									<span className='underline'>{data.contact.email}</span>
@@ -87,6 +82,11 @@ export default function Page() {
 							{data.contact.tel && (
 								<a href={`tel:${data.contact.tel}`} target='_blank' rel='noreferrer'>
 									<span className='underline'>{data.contact.tel}</span>
+								</a>
+							)}
+							{data.contact.link && (
+								<a href={data.contact.link} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.contact.link}</span>
 								</a>
 							)}
 						</div>
