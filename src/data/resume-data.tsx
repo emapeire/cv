@@ -29,7 +29,7 @@ export const RESUME_DATA = {
 				icon: LinkedInIcon
 			},
 			{
-				name: 'X',
+				name: 'X (Twitter)',
 				url: 'https://x.com/emapeire',
 				icon: XIcon
 			}

@@ -38,13 +38,6 @@ export default function Page() {
 									</a>
 								</Button>
 							)}
-							{data.contact.link && (
-								<Button className='size-8' variant='outline' size='icon' asChild>
-									<a href={data.contact.link} target='_blank' rel='noreferrer'>
-										<LinkIcon className='size-4' />
-									</a>
-								</Button>
-							)}
 							{data.contact.email && (
 								<Button className='size-8' variant='outline' size='icon' asChild>
 									<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
@@ -66,9 +59,26 @@ export default function Page() {
 									</a>
 								</Button>
 							))}
+							{data.contact.link && (
+								<Button className='size-8' variant='outline' size='icon' asChild>
+									<a href={data.contact.link} target='_blank' rel='noreferrer'>
+										<LinkIcon className='size-4' />
+									</a>
+								</Button>
+							)}
 						</div>
 
 						<div className='hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex'>
+							{data.personalWebsiteUrl && (
+								<a href={data.personalWebsiteUrl} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.personalWebsiteUrl}</span>
+								</a>
+							)}
+							{data.contact.link && (
+								<a href={data.contact.link} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.contact.link}</span>
+								</a>
+							)}
 							{data.contact.email && (
 								<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
 									<span className='underline'>{data.contact.email}</span>
@@ -189,10 +199,22 @@ export default function Page() {
 						url: data.personalWebsiteUrl,
 						title: 'Personal Website'
 					},
+					{
+						url: `mailto:${data.contact.email}`,
+						title: 'Email'
+					},
+					{
+						url: `tel:${data.contact.tel}`,
+						title: 'Phone'
+					},
 					...data.contact.social.map((socialMediaLink) => ({
 						url: socialMediaLink.url,
 						title: socialMediaLink.name
-					}))
+					})),
+					{
+						url: data.contact.link,
+						title: 'Other links'
+					}
 				]}
 			/>
 		</main>
