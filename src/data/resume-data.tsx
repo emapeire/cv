@@ -6,10 +6,10 @@ export const RESUME_DATA = {
 	location: 'Rosario, Argentina',
 	locationLink: 'https://www.google.com/maps/place/Rosario',
 	about:
-		'Frontend Engineer, OSS Developer, LLMs technical researcher and DX Architect. Always influenced by design.',
-	summary: `As a Front-end Engineer, I specialize in web development and have a background in Machine Learning research.
-	My passion lies in crafting innovative solutions that blend technology and design with a focus on social impact, aiming to make a meaningful difference in people's lives.
-	I am dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
+		'Frontend Engineer, Developer Relations and AI research enthusiast. Always influenced by design.',
+	summary: `I specialize in web development. My passion lies in crafting innovative solutions that blend technology and design with a focus on social impact,
+	aiming to make a meaningful difference in people's lives.
+	I'm dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
 	My goal is to provide a smooth and effective user experience.`,
 	avatar: '/images/avatar.png',
 	personalWebsiteUrl: 'https://emapeire.xyz',
@@ -60,6 +60,15 @@ export const RESUME_DATA = {
 			start: 'Aug, 2023',
 			end: 'Present',
 			description: `Building a non-profit open community of Next.js Argentina.`
+		},
+		{
+			company: 'BaseHub',
+			link: 'https://basehub.com',
+			badges: ['Remote'],
+			title: 'Developer Relations',
+			start: 'Mar, 2024',
+			end: 'Apr, 2024',
+			description: `Working on the product developer team to help developers build better apps with BaseHub CMS and its native AI.`
 		},
 		{
 			company: 'Smat.io',
@@ -126,6 +135,36 @@ export const RESUME_DATA = {
 		'Xcode'
 	],
 	projects: [
+		{
+			title: 'BaseHub - Next.js blog',
+			techStack: [
+				'API',
+				'BaseHub',
+				'CMS',
+				'CSS',
+				'Next.js',
+				'PNPM',
+				'React',
+				'Talwind CSS',
+				'TypeScript',
+				'Vercel'
+			],
+			description:
+				'A starter guide template blog made with Next.js and BaseHub CMS. It uses the BaseHub API to fetch and display posts.',
+			link: {
+				label: 'github.com/basehub-ai/nextjs-blog',
+				href: 'https://github.com/basehub-ai/nextjs-blog'
+			}
+		},
+		{
+			title: 'Basement Challenge',
+			techStack: ['CSS', 'Next.js', 'PNPM', 'React', 'Talwind CSS', 'TypeScript', 'Zustand'],
+			description: 'Basement studio stream challenge.',
+			link: {
+				label: 'github.com/emapeire/basement-challenge',
+				href: 'https://github.com/emapeire/basement-challenge'
+			}
+		},
 		{
 			title: 'Chat With Vader',
 			techStack: [
@@ -235,6 +274,16 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Mercado Libre Challenge',
+			techStack: ['API', 'CSS', 'Next.js', 'PNPM', 'React', 'Talwind CSS', 'TypeScript'],
+			description:
+				'Challenge to create a product search app using the Mercado Libre API. Built with Next.js and TypeScript.',
+			link: {
+				label: 'github.com/emapeire/meli-challenge',
+				href: 'https://github.com/emapeire/meli-challenge'
+			}
+		},
+		{
 			title: 'Mouse Follower',
 			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
 			description: 'A simple mouse follower app made with React and Vite.',
@@ -253,6 +302,27 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: 'Next.js Chat App',
+			techStack: [
+				'API',
+				'CSS',
+				'HTML',
+				'JavaScript',
+				'Next.js',
+				'PNPM',
+				'React',
+				'Shadcn/ui',
+				'Talwind CSS',
+				'TypeScript'
+			],
+			description:
+				'NextJS-Chat offers beginners a chat-based interface to learn Next.js and best coding practices through an AI expert.',
+			link: {
+				label: 'github.com/nextjsargentina/next.js-chat',
+				href: 'https://github.com/nextjsargentina/next.js-chat'
+			}
+		},
+		{
 			title: 'Next.js Releases App',
 			techStack: [
 				'API',
@@ -268,8 +338,8 @@ export const RESUME_DATA = {
 			],
 			description: "NextJS Releases is an App that tracks new releases on NextJS's GitHub.",
 			link: {
-				label: 'github.com/nextjsargentina/nextjs-releases',
-				href: 'https://github.com/nextjsargentina/nextjs-releases'
+				label: 'github.com/nextjsargentina/next.js-releases',
+				href: 'https://github.com/nextjsargentina/next.js-releases'
 			}
 		},
 		{
