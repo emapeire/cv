@@ -5,7 +5,7 @@ import { CommandMenu } from '@/components/command-menu'
 import { Section } from '@/components/ui/section'
 import { Button } from '@/components/ui/button'
 import { ProjectCard } from '@/components/project-card'
-import { GlobeIcon, MailIcon, PhoneIcon, AppWindowIcon } from 'lucide-react'
+import { GlobeIcon, MailIcon, PhoneIcon, AppWindowIcon, LinkIcon } from 'lucide-react'
 import { data } from '@/constants'
 
 export default function Page() {
@@ -35,6 +35,13 @@ export default function Page() {
 								<Button className='size-8' variant='outline' size='icon' asChild>
 									<a href={data.personalWebsiteUrl} target='_blank' rel='noreferrer'>
 										<AppWindowIcon className='size-4' />
+									</a>
+								</Button>
+							)}
+							{data.contact.link && (
+								<Button className='size-8' variant='outline' size='icon' asChild>
+									<a href={data.contact.link} target='_blank' rel='noreferrer'>
+										<LinkIcon className='size-4' />
 									</a>
 								</Button>
 							)}
@@ -75,10 +82,12 @@ export default function Page() {
 						</div>
 					</div>
 
-					<Avatar className='size-28'>
-						<AvatarImage alt={data.name} src={data.avatar} />
-						<AvatarFallback>{data.initials}</AvatarFallback>
-					</Avatar>
+					<a href='https://github.com/emapeire' target='_blank' rel='noreferrer'>
+						<Avatar className='size-28 border'>
+							<AvatarImage alt={data.name} src={data.avatar} />
+							<AvatarFallback>{data.initials}</AvatarFallback>
+						</Avatar>
+					</a>
 				</div>
 
 				<Section>

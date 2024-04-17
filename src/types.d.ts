@@ -5,6 +5,7 @@ export interface SocialLink {
 }
 
 export interface ContactInfo {
+	link: string
 	email: string
 	tel: string
 	social: SocialLink[]

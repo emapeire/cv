@@ -14,6 +14,7 @@ export const RESUME_DATA = {
 	avatar: '/images/avatar.png',
 	personalWebsiteUrl: 'https://emapeire.xyz',
 	contact: {
+		link: 'https://link.emapeire.xyz',
 		email: 'me@emapeire.xyz',
 		tel: '+5493417190449',
 		social: [
