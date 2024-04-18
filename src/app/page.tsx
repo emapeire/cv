@@ -95,7 +95,7 @@ export default function Page() {
 					<a href='https://github.com/emapeire' target='_blank' rel='noreferrer'>
 						<Avatar className='size-28 border'>
 							<AvatarImage alt={data.name} src={data.avatar} />
-							<AvatarFallback>{data.initials}</AvatarFallback>
+							<AvatarFallback className='font-mono font-bold'>{data.initials}</AvatarFallback>
 						</Avatar>
 					</a>
 				</div>
