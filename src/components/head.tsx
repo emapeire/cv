@@ -15,13 +15,13 @@ export function Head({ metadata }: { metadata: Metadata }) {
 			<meta property='og:description' content={metadata.description?.toString()} />
 			<meta property='og:type' content='website' />
 			<meta property='og:url' content='https://cv.emapeire.xyz' />
-			<meta property='og:image' content='https://cv.emapeire.xyz/og-image.png' />
+			<meta property='og:image' content='/images/og-image.png' />
 
 			<meta name='twitter:card' content='summary_large_image' />
 			<meta name='twitter:creator' content='@emapeire' />
 			<meta name='twitter:title' content={metadata.title?.toString()} />
 			<meta name='twitter:description' content={metadata.description?.toString()} />
-			<meta name='twitter:image' content='https://cv.emapeire.xyz/og-image.png' />
+			<meta name='twitter:image' content='/images/og-image.png' />
 
 			<meta name='msapplication-TileColor' content='#000000' />
 			<meta name='theme-color' content='#000000'></meta>
