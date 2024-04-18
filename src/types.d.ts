@@ -4,10 +4,25 @@ export interface SocialLink {
 	icon: React.ComponentType<{ className: string }>
 }
 
+export interface ContactLink {
+	name: string
+	url: string
+}
+
+export interface ContactEmail {
+	name: string
+	at: string
+}
+
+export interface ContactTel {
+	name: string
+	phoneNumber: string
+}
+
 export interface ContactInfo {
-	link: string
-	email: string
-	tel: string
+	link: ContactLink
+	email: ContactEmail
+	tel: ContactTel
 	social: SocialLink[]
 }
 
@@ -33,6 +48,11 @@ export interface ProjectLink {
 	href: string
 }
 
+export interface PersonalWebsiteUrl {
+	name: string
+	url: string
+}
+
 export interface Project {
 	title: string
 	techStack: string[]
@@ -48,7 +68,7 @@ export interface ResumeData {
 	about: string
 	summary: string
 	avatar: string
-	personalWebsiteUrl: string
+	personalWebsiteUrl: PersonalWebsiteUrl
 	contact: ContactInfo
 	education: EducationEntry[]
 	work: WorkEntry[]

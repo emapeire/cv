@@ -12,11 +12,23 @@ export const RESUME_DATA = {
 	I'm dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
 	My goal is to provide a smooth and effective user experience.`,
 	avatar: '/images/avatar.png',
-	personalWebsiteUrl: 'https://emapeire.xyz',
+	personalWebsiteUrl: {
+		name: 'Portfolio',
+		url: 'https://emapeire.xyz'
+	},
 	contact: {
-		link: 'https://link.emapeire.xyz',
-		email: 'me@emapeire.xyz',
-		tel: '+5493417190449',
+		link: {
+			name: 'Other Links',
+			url: 'https://link.emapeire.xyz'
+		},
+		email: {
+			name: 'Email',
+			at: 'me@emapeire.xyz'
+		},
+		tel: {
+			name: 'Phone',
+			phoneNumber: '+5493417190449'
+		},
 		social: [
 			{
 				name: 'GitHub',

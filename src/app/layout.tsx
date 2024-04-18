@@ -2,8 +2,9 @@ import React from 'react'
 import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { RESUME_DATA } from '@/data/resume-data'
 import { Head } from '@/components/head'
+import { TooltipProvider } from '@/components/ui/tooltip'
+import { RESUME_DATA } from '@/data/resume-data'
 import { cn } from '@/lib/utils'
 import './globals.css'
 
@@ -23,7 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			)}
 		>
 			<Head metadata={metadata} />
-			<body>{children}</body>
+			<body>
+				<TooltipProvider>{children}</TooltipProvider>
+			</body>
 		</html>
 	)
 }

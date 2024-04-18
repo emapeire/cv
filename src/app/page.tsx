@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { CommandMenu } from '@/components/command-menu'
 import { Section } from '@/components/ui/section'
 import { Button } from '@/components/ui/button'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { ProjectCard } from '@/components/project-card'
 import { GlobeIcon, MailIcon, PhoneIcon, AppWindowIcon, LinkIcon } from 'lucide-react'
 import { data } from '@/constants'
@@ -32,61 +33,101 @@ export default function Page() {
 
 						<div className='flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden'>
 							{data.personalWebsiteUrl && (
-								<Button className='size-8' variant='outline' size='icon' asChild>
-									<a href={data.personalWebsiteUrl} target='_blank' rel='noreferrer'>
-										<AppWindowIcon className='size-4' />
-									</a>
-								</Button>
+								<Tooltip>
+									<TooltipTrigger asChild>
+										<Button className='size-8' variant='outline' size='icon' asChild>
+											<a href={data.personalWebsiteUrl.url} target='_blank' rel='noreferrer'>
+												<AppWindowIcon className='size-4' />
+											</a>
+										</Button>
+									</TooltipTrigger>
+									<TooltipContent side='bottom'>
+										<p className='text-xs'>{data.personalWebsiteUrl.name}</p>
+									</TooltipContent>
+								</Tooltip>
 							)}
 							{data.contact.email && (
-								<Button className='size-8' variant='outline' size='icon' asChild>
-									<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
-										<MailIcon className='size-4' />
-									</a>
-								</Button>
+								<Tooltip>
+									<TooltipTrigger asChild>
+										<Button className='size-8' variant='outline' size='icon' asChild>
+											<a href={`mailto:${data.contact.email.at}`} target='_blank' rel='noreferrer'>
+												<MailIcon className='size-4' />
+											</a>
+										</Button>
+									</TooltipTrigger>
+									<TooltipContent side='bottom'>
+										<p className='text-xs'>{data.contact.email.name}</p>
+									</TooltipContent>
+								</Tooltip>
 							)}
 							{data.contact.tel && (
-								<Button className='size-8' variant='outline' size='icon' asChild>
-									<a href={`tel:${data.contact.tel}`} target='_blank' rel='noreferrer'>
-										<PhoneIcon className='size-4' />
-									</a>
-								</Button>
+								<Tooltip>
+									<TooltipTrigger asChild>
+										<Button className='size-8' variant='outline' size='icon' asChild>
+											<a
+												href={`tel:${data.contact.tel.phoneNumber}`}
+												target='_blank'
+												rel='noreferrer'
+											>
+												<PhoneIcon className='size-4' />
+											</a>
+										</Button>
+									</TooltipTrigger>
+									<TooltipContent side='bottom'>
+										<p className='text-xs'>{data.contact.tel.name}</p>
+									</TooltipContent>
+								</Tooltip>
 							)}
 							{data.contact.social.map((social) => (
-								<Button key={social.name} className='size-8' variant='outline' size='icon' asChild>
-									<a href={social.url} target='_blank' rel='noreferrer'>
-										<social.icon className='size-4' />
-									</a>
-								</Button>
+								<Tooltip key={social.name}>
+									<TooltipTrigger asChild>
+										<Button
+											key={social.name}
+											className='size-8'
+											variant='outline'
+											size='icon'
+											asChild
+										>
+											<a href={social.url} target='_blank' rel='noreferrer'>
+												<social.icon className='size-4' />
+											</a>
+										</Button>
+									</TooltipTrigger>
+									<TooltipContent side='bottom'>
+										<p className='text-xs'>{social.name}</p>
+									</TooltipContent>
+								</Tooltip>
 							))}
 							{data.contact.link && (
-								<Button className='size-8' variant='outline' size='icon' asChild>
-									<a href={data.contact.link} target='_blank' rel='noreferrer'>
-										<LinkIcon className='size-4' />
-									</a>
-								</Button>
+								<Tooltip>
+									<TooltipTrigger asChild>
+										<Button className='size-8' variant='outline' size='icon' asChild>
+											<a href={data.contact.link.url} target='_blank' rel='noreferrer'>
+												<LinkIcon className='size-4' />
+											</a>
+										</Button>
+									</TooltipTrigger>
+									<TooltipContent side='bottom'>
+										<p className='text-xs'>{data.contact.link.name}</p>
+									</TooltipContent>
+								</Tooltip>
 							)}
 						</div>
 
 						<div className='hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex'>
 							{data.personalWebsiteUrl && (
-								<a href={data.personalWebsiteUrl} target='_blank' rel='noreferrer'>
-									<span className='underline'>{data.personalWebsiteUrl}</span>
+								<a href={data.personalWebsiteUrl.url} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.personalWebsiteUrl.url}</span>
 								</a>
 							)}
 							{data.contact.email && (
-								<a href={`mailto:${data.contact.email}`} target='_blank' rel='noreferrer'>
-									<span className='underline'>{data.contact.email}</span>
+								<a href={`mailto:${data.contact.email.at}`} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.contact.email.at}</span>
 								</a>
 							)}
 							{data.contact.tel && (
-								<a href={`tel:${data.contact.tel}`} target='_blank' rel='noreferrer'>
-									<span className='underline'>{data.contact.tel}</span>
-								</a>
-							)}
-							{data.contact.link && (
-								<a href={data.contact.link} target='_blank' rel='noreferrer'>
-									<span className='underline'>{data.contact.link}</span>
+								<a href={`tel:${data.contact.tel.phoneNumber}`} target='_blank' rel='noreferrer'>
+									<span className='underline'>{data.contact.tel.phoneNumber}</span>
 								</a>
 							)}
 						</div>
@@ -196,24 +237,24 @@ export default function Page() {
 			<CommandMenu
 				links={[
 					{
-						url: data.personalWebsiteUrl,
-						title: 'Portfolio'
+						url: data.personalWebsiteUrl.url,
+						title: data.personalWebsiteUrl.name
 					},
 					{
-						url: `mailto:${data.contact.email}`,
-						title: 'Email'
+						url: `mailto:${data.contact.email.at}`,
+						title: data.contact.email.name
 					},
 					{
-						url: `tel:${data.contact.tel}`,
-						title: 'Phone'
+						url: `tel:${data.contact.tel.phoneNumber}`,
+						title: data.contact.tel.name
 					},
 					...data.contact.social.map((socialMediaLink) => ({
 						url: socialMediaLink.url,
 						title: socialMediaLink.name
 					})),
 					{
-						url: data.contact.link,
-						title: 'Other Links'
+						url: data.contact.link.url,
+						title: data.contact.link.name
 					}
 				]}
 			/>
