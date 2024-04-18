@@ -197,7 +197,7 @@ export default function Page() {
 				links={[
 					{
 						url: data.personalWebsiteUrl,
-						title: 'Personal Website'
+						title: 'Portfolio'
 					},
 					{
 						url: `mailto:${data.contact.email}`,
@@ -213,7 +213,7 @@ export default function Page() {
 					})),
 					{
 						url: data.contact.link,
-						title: 'Other links'
+						title: 'Other Links'
 					}
 				]}
 			/>
