@@ -7,7 +7,7 @@ export const RESUME_DATA = {
 	locationLink: 'https://www.google.com/maps/place/Rosario',
 	about:
 		'Frontend Engineer, Developer Relations and AI research enthusiast. Always influenced by design.',
-	summary: `I specialize in web development. My passion lies in crafting innovative solutions that blend technology and design with a focus on social impact,
+	summary: `Specialized in web development. My passion lies in crafting innovative solutions that blend technology and design with a focus on social impact,
 	aiming to make a meaningful difference in people's lives.
 	I'm dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
 	My goal is to provide a smooth and effective user experience.`,
