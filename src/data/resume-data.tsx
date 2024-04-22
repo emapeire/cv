@@ -11,7 +11,7 @@ export const RESUME_DATA = {
 	aiming to make a meaningful difference in people's lives.
 	I'm dedicated to utilizing the most recent and advanced frontend technologies to improve user accessibility and maximize web application performance.
 	My goal is to provide a smooth and effective user experience.`,
-	avatar: '/images/avatar.png',
+	avatar: '/images/avatar.webp',
 	personalWebsiteUrl: {
 		name: 'Portfolio',
 		url: 'https://emapeire.xyz'
