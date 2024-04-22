@@ -47,6 +47,7 @@ export function CommandMenu({ links }: Props) {
 				variant='outline'
 				size='icon'
 				className='fixed bottom-4 right-4 flex rounded-full shadow-2xl print:hidden xl:hidden'
+				aria-label='Open command menu'
 			>
 				<CommandIcon className='my-6 h-6 w-6' />
 			</Button>

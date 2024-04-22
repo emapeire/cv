@@ -46,7 +46,7 @@ export function ButtonLink({ data }: { data: ResumeData }) {
 						<Tooltip key={index}>
 							<TooltipTrigger asChild>
 								<Button className='size-8' variant='outline' size='icon' asChild>
-									<a href={link.url} target='_blank' rel='noreferrer'>
+									<a href={link.url} target='_blank' rel='noreferrer' aria-label={link.name}>
 										<link.icon className='size-4' />
 									</a>
 								</Button>
