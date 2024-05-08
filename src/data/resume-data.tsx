@@ -306,6 +306,25 @@ export const RESUME_DATA = {
 			}
 		},
 		{
+			title: "Morty's characters",
+			techStack: [
+				'API',
+				'Apollo',
+				'CSS',
+				'GraphQL',
+				'JavaScript',
+				'React',
+				'Tailwind CSS',
+				'TypeScript'
+			],
+			description:
+				"A simple app that lists all Morty's characters. Built with Next.js and GraphQL.",
+			link: {
+				label: 'github.com/emapeire/nextjs-graphql',
+				href: 'https://github.com/emapeire/nextjs-graphql'
+			}
+		},
+		{
 			title: 'Movie Search App',
 			techStack: ['CSS', 'HTML', 'JavaScript', 'React', 'Vite'],
 			description: 'A simple movie search app made with React and Vite.',
