@@ -23,7 +23,7 @@ export const RESUME_DATA = {
 		},
 		email: {
 			name: 'Email',
-			at: 'me@emapeire.xyz'
+			at: 'hi@emapeire.xyz'
 		},
 		tel: {
 			name: 'Phone',
