@@ -60,7 +60,7 @@ export const RESUME_DATA = {
 			company: 'Frontend Lab',
 			link: 'https://github.com/thefrontendlab',
 			badges: ['Hybrid'],
-			title: 'Software Developer and Technical Researcher',
+			title: 'Frontend Developer and Technical Researcher',
 			start: 'Jul, 2021',
 			end: 'Present',
 			description: `Developing and researching new technologies and tools for the frontend community.`
@@ -80,7 +80,7 @@ export const RESUME_DATA = {
 			badges: ['Remote'],
 			title: 'Developer Relations',
 			start: 'Mar, 2024',
-			end: 'Apr, 2024',
+			end: 'May, 2024',
 			description: `Working on the product developer team to help developers build better apps with BaseHub CMS and its native AI.`
 		},
 		{
