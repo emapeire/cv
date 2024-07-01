@@ -51,37 +51,36 @@ export default function Page() {
 					{data.work.map((work) => (
 						<Card key={work.company}>
 							<CardHeader>
-								<div className='flex items-center justify-between gap-x-2 text-base'>
-									<h3 className='inline-flex items-center justify-center gap-x-1 font-semibold leading-none'>
-										{work.link ? (
-											<a
-												className='hover:underline'
-												href={work.link}
-												target='_blank'
-												rel='noreferrer'
-											>
-												{work.company}
-											</a>
-										) : (
-											<p>{work.company}</p>
-										)}
+								<h3 className='text-base inline-flex items-center gap-x-1 font-semibold leading-none'>
+									{work.link ? (
+										<a
+											className='hover:underline'
+											href={work.link}
+											target='_blank'
+											rel='noreferrer'
+										>
+											{work.company}
+										</a>
+									) : (
+										<span>{work.company}</span>
+									)}
 
-										<span className='inline-flex gap-x-1'>
-											{work.badges.map((badge) => (
-												<Badge variant='secondary' className='align-middle text-xs' key={badge}>
-													{badge}
-												</Badge>
-											))}
-										</span>
-									</h3>
-								</div>
+									<span className='inline-flex gap-x-1'>
+										{work.badges.map((badge) => (
+											<Badge variant='secondary' className='align-middle text-xs' key={badge}>
+												{badge}
+											</Badge>
+										))}
+									</span>
+								</h3>
 							</CardHeader>
+
 							{work.jobs.map((job) => (
 								<div key={job.title}>
 									<CardHeader>
-										<div className='flex items-center justify-between gap-x-2 text-base'>
-											<h4 className='font-mono text-sm leading-none'>{job.title}</h4>
-											<div className='text-sm tabular-nums text-neutral-500'>
+										<div className='flex items-center justify-between gap-x-2 mt-2 text-sm'>
+											<h4 className='font-mono'>{job.title}</h4>
+											<div className='tabular-nums text-neutral-500'>
 												{job.start} - {job.end}
 											</div>
 										</div>
@@ -106,14 +105,23 @@ export default function Page() {
 					{data.education.map((education) => (
 						<Card key={education.school}>
 							<CardHeader>
-								<div className='flex items-center justify-between gap-x-2 text-base'>
-									<h3 className='font-semibold leading-none'>{education.school}</h3>
-									<div className='text-sm tabular-nums text-neutral-500'>
+								<h3 className='font-semibold leading-none text-base'>{education.school}</h3>
+								<div className='flex items-center justify-between gap-x-2 text-sm'>
+									<h4 className='font-mono'>{education.degree}</h4>
+									<div className='tabular-nums text-neutral-500'>
 										{education.start} - {education.end}
 									</div>
 								</div>
 							</CardHeader>
-							<CardContent className='mt-2'>{education.degree}</CardContent>
+							<CardContent className='mt-2 text-xs'>
+								<ul>
+									{education.description.map((item, index) => (
+										<li key={index} className='mb-1'>
+											• {item}
+										</li>
+									))}
+								</ul>
+							</CardContent>
 						</Card>
 					))}
 				</Section>
