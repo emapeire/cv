@@ -31,16 +31,21 @@ export interface EducationEntry {
 	degree: string
 	start: string
 	end: string
+	description: string[]
+}
+
+export interface JobsEntry {
+	title: string
+	start: string
+	end: string
+	description: string[]
 }
 
 export interface WorkEntry {
 	company: string
 	link?: string
 	badges: string[]
-	title: string
-	start: string
-	end: string
-	description: string[]
+	jobs: JobsEntry[]
 }
 
 export interface ProjectLink {

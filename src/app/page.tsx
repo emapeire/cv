@@ -48,96 +48,97 @@ export default function Page() {
 
 				<Section>
 					<h2 className='text-xl font-bold'>Work Experience</h2>
-					{data.work.map((work) => {
-						return (
-							<Card key={work.company}>
-								<CardHeader>
-									<div className='flex items-center justify-between gap-x-2 text-base'>
-										<h3 className='inline-flex items-center justify-center gap-x-1 font-semibold leading-none'>
-											{work.link ? (
-												<a
-													className='hover:underline'
-													href={work.link}
-													target='_blank'
-													rel='noreferrer'
-												>
-													{work.company}
-												</a>
-											) : (
-												<p>{work.company}</p>
-											)}
+					{data.work.map((work) => (
+						<Card key={work.company}>
+							<CardHeader>
+								<div className='flex items-center justify-between gap-x-2 text-base'>
+									<h3 className='inline-flex items-center justify-center gap-x-1 font-semibold leading-none'>
+										{work.link ? (
+											<a
+												className='hover:underline'
+												href={work.link}
+												target='_blank'
+												rel='noreferrer'
+											>
+												{work.company}
+											</a>
+										) : (
+											<p>{work.company}</p>
+										)}
 
-											<span className='inline-flex gap-x-1'>
-												{work.badges.map((badge) => (
-													<Badge variant='secondary' className='align-middle text-xs' key={badge}>
-														{badge}
-													</Badge>
-												))}
-											</span>
-										</h3>
-										<div className='text-sm tabular-nums text-neutral-500'>
-											{work.start} - {work.end}
+										<span className='inline-flex gap-x-1'>
+											{work.badges.map((badge) => (
+												<Badge variant='secondary' className='align-middle text-xs' key={badge}>
+													{badge}
+												</Badge>
+											))}
+										</span>
+									</h3>
+								</div>
+							</CardHeader>
+							{work.jobs.map((job) => (
+								<div key={job.title}>
+									<CardHeader>
+										<div className='flex items-center justify-between gap-x-2 text-base'>
+											<h4 className='font-mono text-sm leading-none'>{job.title}</h4>
+											<div className='text-sm tabular-nums text-neutral-500'>
+												{job.start} - {job.end}
+											</div>
 										</div>
-									</div>
-
-									<h4 className='font-mono text-sm leading-none'>{work.title}</h4>
-								</CardHeader>
-								<CardContent className='mt-2 text-xs'>
-									<ul>
-										{work.description.map((item, index) => (
-											<li key={index} className='mb-1'>
-												• {item}
-											</li>
-										))}
-									</ul>
-								</CardContent>
-							</Card>
-						)
-					})}
+									</CardHeader>
+									<CardContent className='mt-2 text-xs'>
+										<ul>
+											{job.description.map((item, index) => (
+												<li key={index} className='mb-1'>
+													• {item}
+												</li>
+											))}
+										</ul>
+									</CardContent>
+								</div>
+							))}
+						</Card>
+					))}
 				</Section>
 
 				<Section>
 					<h2 className='text-xl font-bold'>Education</h2>
-					{data.education.map((education) => {
-						return (
-							<Card key={education.school}>
-								<CardHeader>
-									<div className='flex items-center justify-between gap-x-2 text-base'>
-										<h3 className='font-semibold leading-none'>{education.school}</h3>
-										<div className='text-sm tabular-nums text-neutral-500'>
-											{education.start} - {education.end}
-										</div>
+					{data.education.map((education) => (
+						<Card key={education.school}>
+							<CardHeader>
+								<div className='flex items-center justify-between gap-x-2 text-base'>
+									<h3 className='font-semibold leading-none'>{education.school}</h3>
+									<div className='text-sm tabular-nums text-neutral-500'>
+										{education.start} - {education.end}
 									</div>
-								</CardHeader>
-								<CardContent className='mt-2'>{education.degree}</CardContent>
-							</Card>
-						)
-					})}
+								</div>
+							</CardHeader>
+							<CardContent className='mt-2'>{education.degree}</CardContent>
+						</Card>
+					))}
 				</Section>
 
 				<Section>
 					<h2 className='text-xl font-bold'>Skills</h2>
 					<div className='flex flex-wrap gap-1'>
-						{data.skills.map((skill) => {
-							return <Badge key={skill}>{skill}</Badge>
-						})}
+						{data.skills.map((skill) => (
+							<Badge key={skill}>{skill}</Badge>
+						))}
 					</div>
 				</Section>
 
 				<Section className='print-force-new-page scroll-mb-16'>
 					<h2 className='text-xl font-bold'>Projects</h2>
 					<div className='-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3'>
-						{data.projects.map((project) => {
-							return (
-								<ProjectCard
-									key={project.title}
-									title={project.title}
-									description={project.description}
-									tags={project.techStack}
-									link={'link' in project ? project.link.href : undefined}
-								/>
-							)
-						})}
+						{data.projects.map((project) => (
+							<ProjectCard
+								key={project.title}
+								title={project.title}
+								description={project.description}
+								tags={project.techStack}
+								link={'link' in project ? project.link.href : undefined}
+							/>
+						))}
 					</div>
 				</Section>
 			</section>
