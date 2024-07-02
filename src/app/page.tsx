@@ -75,25 +75,23 @@ export default function Page() {
 								</h3>
 							</CardHeader>
 
-							<CardContent className='mt-2 text-xs'>
-								{work.jobs.map((job, index) => (
-									<div key={index} className='mb-4'>
-										<div className='flex items-center justify-between gap-x-2 text-sm'>
-											<h4 className='font-mono text-black'>{job.title}</h4>
-											<time className='tabular-nums text-neutral-500'>
-												{job.start} - {job.end}
-											</time>
-										</div>
-										<ul className='mt-2'>
-											{job.description.map((item, index) => (
-												<li key={index} className='mb-1'>
-													• {item}
-												</li>
-											))}
-										</ul>
+							{work.jobs.map((job, index) => (
+								<CardContent key={index} className='mt-2 mb-4 text-xs'>
+									<div className='flex flex-col md:flex-row md:items-center justify-between gap-x-2 text-sm'>
+										<h4 className='font-mono text-primary'>{job.title}</h4>
+										<time className='tabular-nums text-neutral-500'>
+											{job.start} - {job.end}
+										</time>
 									</div>
-								))}
-							</CardContent>
+									<ul className='mt-2'>
+										{job.description.map((item, index) => (
+											<li key={index} className='mb-1'>
+												• {item}
+											</li>
+										))}
+									</ul>
+								</CardContent>
+							))}
 						</Card>
 					))}
 				</Section>
@@ -104,15 +102,15 @@ export default function Page() {
 						<Card key={education.school}>
 							<CardHeader>
 								<h3 className='font-semibold leading-none text-base'>{education.school}</h3>
-								<div className='flex items-center justify-between gap-x-2 text-sm'>
-									<h4 className='font-mono'>{education.degree}</h4>
+							</CardHeader>
+							<CardContent className='mt-2 mb-4 text-xs'>
+								<div className='flex flex-col md:flex-row md:items-center justify-between gap-x-2 text-sm'>
+									<h4 className='font-mono text-primary'>{education.degree}</h4>
 									<time className='tabular-nums text-neutral-500'>
 										{education.start} - {education.end}
 									</time>
 								</div>
-							</CardHeader>
-							<CardContent className='mt-2 text-xs'>
-								<ul>
+								<ul className='mt-2'>
 									{education.description.map((item, index) => (
 										<li key={index} className='mb-1'>
 											• {item}
