@@ -75,27 +75,25 @@ export default function Page() {
 								</h3>
 							</CardHeader>
 
-							{work.jobs.map((job) => (
-								<div key={job.title}>
-									<CardHeader>
-										<div className='flex items-center justify-between gap-x-2 mt-2 text-sm'>
-											<h4 className='font-mono'>{job.title}</h4>
-											<div className='tabular-nums text-neutral-500'>
+							<CardContent className='mt-2 text-xs'>
+								{work.jobs.map((job, index) => (
+									<div key={index} className='mb-4'>
+										<div className='flex items-center justify-between gap-x-2 text-sm'>
+											<h4 className='font-mono text-black'>{job.title}</h4>
+											<time className='tabular-nums text-neutral-500'>
 												{job.start} - {job.end}
-											</div>
+											</time>
 										</div>
-									</CardHeader>
-									<CardContent className='mt-2 text-xs'>
-										<ul>
+										<ul className='mt-2'>
 											{job.description.map((item, index) => (
 												<li key={index} className='mb-1'>
 													• {item}
 												</li>
 											))}
 										</ul>
-									</CardContent>
-								</div>
-							))}
+									</div>
+								))}
+							</CardContent>
 						</Card>
 					))}
 				</Section>
