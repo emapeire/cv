@@ -106,9 +106,9 @@ export default function Page() {
 								<h3 className='font-semibold leading-none text-base'>{education.school}</h3>
 								<div className='flex items-center justify-between gap-x-2 text-sm'>
 									<h4 className='font-mono'>{education.degree}</h4>
-									<div className='tabular-nums text-neutral-500'>
+									<time className='tabular-nums text-neutral-500'>
 										{education.start} - {education.end}
-									</div>
+									</time>
 								</div>
 							</CardHeader>
 							<CardContent className='mt-2 text-xs'>
