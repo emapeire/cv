@@ -1,4 +1,4 @@
-import { MailIcon, PhoneIcon, AppWindowIcon, LinkIcon } from 'lucide-react'
+import { MailIcon, AppWindowIcon, LinkIcon } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 import { Button } from './ui/button'
 import { type ResumeData } from '@/types'
@@ -16,12 +16,6 @@ export function ButtonLink({ data }: { data: ResumeData }) {
 			icon: MailIcon,
 			name: data.contact.email?.name,
 			type: 'email'
-		},
-		{
-			url: `tel:${data.contact.tel?.phoneNumber}`,
-			icon: PhoneIcon,
-			name: data.contact.tel?.name,
-			type: 'phone'
 		},
 		...data.contact.social.map((social) => ({
 			url: social.url,

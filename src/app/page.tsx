@@ -157,10 +157,6 @@ export default function Page() {
 						url: `mailto:${data.contact.email.at}`,
 						title: data.contact.email.name
 					},
-					{
-						url: `tel:${data.contact.tel.phoneNumber}`,
-						title: data.contact.tel.name
-					},
 					...data.contact.social.map((socialMediaLink) => ({
 						url: socialMediaLink.url,
 						title: socialMediaLink.name

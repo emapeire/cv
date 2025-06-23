@@ -25,10 +25,6 @@ export const RESUME_DATA = {
 			name: 'Email',
 			at: 'hi@emapeire.xyz'
 		},
-		tel: {
-			name: 'Phone',
-			phoneNumber: '+5493417190449'
-		},
 		social: [
 			{
 				name: 'GitHub',
